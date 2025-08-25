@@ -11,14 +11,14 @@
             <% } %> 
             <div class="table-responsive">
                 <% if (users.length > 0) { %>
-                    <table class="table table-striped text-center my-3">
+                    <table class="table table-striped my-3">
                         <thead>
-                           <tr class=" text-center table-dark">
+                           <tr class="text-white text-center bg-dark">
                                 <th>ID</th>
                                 <th>Image</th>
                                 <th>Name</th>
                                 <th>E-Mail</th>
-                                <th>Phone</th>
+                                <th class="text-center ms-5">Phone</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -29,7 +29,7 @@
                                     <td><img src="<%= row.image %>" width="50" class="img-thumbnail" /></td>
                                     <td><%= row.name %></td>
                                     <td><%= row.email %></td>
-                                    <td><%= row.phone %></td>
+                                    <td class="text-center ms-5"><%= row.phone %></td>
                                     <td>
                                         <a href="/edit/<%= row._id %>" class="text-success">
                                             <i class="fas fa-edit fa-lg mx-1"></i>
